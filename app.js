@@ -1,6 +1,6 @@
 import express from "express";
-import conectaNaDatabase from "./config/dbConnect.js";
-import routes from "./routes/index.js";
+import conectaNaDatabase from "./src/config/dbConnect.js";
+import routes from "./src/routes/index.js";
 import cors from "cors";
 
 
