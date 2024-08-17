@@ -5,9 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test1": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./api/index.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +20,11 @@
     "mongodb": "^6.8.0",
     "mongoose": "^7.3.4",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "@jest/globals": "28.1.2",
+    "cross-env": "^7.0.3",
+    "jest": "28.1.2",
+    "supertest": "^7.0.0"
   }
 }
